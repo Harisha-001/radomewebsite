@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zexx">
+<html lang="exx">
 
 <head>
     <!-- Meta -->
@@ -48,6 +48,58 @@
 </head>
 
 <body>
+    <style>
+        /* Hide desktop menu and show hamburger on mobile */
+@media (max-width: 991.98px) {
+    .site-navigation {
+        display: none !important;
+    }
+    .navbar-header {
+        display: block !important;
+    }
+}
+
+/* Show desktop menu and hide hamburger on desktop */
+@media (min-width: 992px) {
+    .site-navigation {
+        display: block !important;
+    }
+    .navbar-header {
+        display: none !important;
+    }
+}
+
+/* Mobile menu overlay styles */
+@media (max-width: 991.98px) {
+    .pbmit-menu-wrap {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 80vw;
+        height: 100vh;
+        background: #fff;
+        z-index: 9999;
+        transition: right 0.3s;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        overflow-y: auto;
+    }
+    .pbmit-menu-wrap.active {
+        right: 0;
+    }
+    .pbmit-mobile-menu-bg {
+        display: block;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.4);
+        z-index: 9998;
+    }
+    .pbmit-mobile-menu-bg.hide {
+        display: none;
+    }
+}
+
+    </style>
     <!-- Header Start -->
     <header class="site-header header-style-1">
         <div class="pbmit-header-overlay">
@@ -193,9 +245,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-2" data-cursor="-opaque" style="margin-top: 50px;"><span>AI-Powered
-                                Temperature <br>Control in
-                                Coconut Oil Production</span></h1>
+                        <h1 class="text-anime-style-2" data-cursor="-opaque" style="margin-top: 50px; font-family: 'Raleway', sans-serif;">
+                            <span>AI-Powered Temperature <br>Control in Coconut Oil Production</span>
+                        </h1>
+                        <!-- Add Raleway font link in <head> if not already present -->
+                        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
                         <nav class="wow fadeInUp">
                             <!-- <ol class="breadcrumb">
                                 <li class="breadcrumb-item active" aria-current="page"
@@ -354,25 +408,19 @@
                         <!-- Project Entry Start -->
                         <div class="project-entry">
                             <!-- Project Info Start -->
-                            <div class="project-info">
+                            <div class="project-info" style="font-family: 'Raleway', sans-serif;">
                                 <h2 class="text-anime-style-2"><span>Challenge</span></h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s" style="font-size: 20px;">In coconut oil
-                                    production, maintaining
-                                    optimal temperatures during the cooking phase is essential to ensure high-quality
-                                    output. A major challenge in this process is the inconsistent moisture content of
-                                    the incoming copra, which makes it difficult to consistently achieve the desired
-                                    moisture level after cooking. If the copra retains excess moisture post-cooking, it
-                                    can compromise the oil yield.</p>
-                                <p class="wow fadeInUp" data-wow-delay="0.4s" style="font-size: 20px;">To develop an
-                                    AI-powered system that
-                                    dynamically predicts and regulates compartment-wise temperatures based on real-time
-                                    copra moisture levels, thereby enhancing product quality, reducing human
-                                    intervention, and improving process efficiency. </p>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s" style="font-size: 20px;">
+                                    In coconut oil production, maintaining optimal temperatures during the cooking phase is essential to ensure high-quality output. A major challenge in this process is the inconsistent moisture content of the incoming copra, which makes it difficult to consistently achieve the desired moisture level after cooking. If the copra retains excess moisture post-cooking, it can compromise the oil yield.
+                                </p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s" style="font-size: 20px;">
+                                    To develop an AI-powered system that dynamically predicts and regulates compartment-wise temperatures based on real-time copra moisture levels, thereby enhancing product quality, reducing human intervention, and improving process efficiency.
+                                </p>
                             </div>
                             <!-- Project Info End -->
 
                             <!-- Project Goal Start -->
-                            <div class="project-goal">
+                            <div class="project-goal" style="font-family: 'Raleway', sans-serif;">
                                 <h2 class="text-anime-style-2"><span>Our Solution </span></h2>
                                 <p class="wow fadeInUp" data-wow-delay="0.2s" style="font-size: 20px;">To address this,
                                     the temperature
@@ -391,7 +439,7 @@
                             <!-- Project Goal Start -->
 
                             <!-- Project Query Box Start -->
-                            <div class="project-query-box">
+                            <div class="project-query-box" style="font-family: 'Raleway', sans-serif;">
                                 <!-- Project Query Item Start -->
                                 <div class="project-query-item">
                                     <!-- Project Query Content Start -->
@@ -422,10 +470,10 @@
                                 <!-- Project Query Item End -->
 
                                 <!-- Project Query Item Start -->
-                                <div class="project-query-item">
+                                <div class="project-query-item" style="font-family: 'Raleway', sans-serif;">
                                     <!-- Project Query Content Start -->
                                     <div class="project-query-content">
-                                        <h2 class="text-anime-style-2"><span>Components </span></h2>
+                                        <h2 class="text-anime-style-2"><span>Components</span></h2>
                                         <ul class="wow fadeInUp" data-wow-delay="0.4s" style="font-size: 20px;">
                                             <li><span style="font-weight:bold; "> Network Model:</span> <br>Predicts
                                                 optimal
@@ -457,7 +505,7 @@
                         <!-- Project Entry End -->
 
                         <!-- Our FAQ Section Start -->
-                        <div class="our-faq-section">
+                        <div class="our-faq-section" style="font-family: 'Raleway', sans-serif;">
                             <!-- Section Title Start -->
                             <div class="section-title">
                                 <h2 class="text-anime-style-2" data-cursor="-opaque">
@@ -551,7 +599,7 @@
     <!-- Page Project Single End -->
 
      <!-- footer -->
-  <footer class="footer site-footer footer-style-4 " style="background-color: #140a52;">
+     <footer class="footer site-footer footer-style-4 " style="background-color: #140a52; font-size: 20px;  font-family: 'Raleway', sans-serif !important;">
     <div class="pbmit-footer-widget-area">
       <div class="container">
         <div class="row">
